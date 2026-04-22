@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PMS Product Suite</title>
+  <style>
+    :root{
+      --bg:#f6f8fb;
+      --card:#ffffff;
+      --ink:#1f2937;
+      --muted:#5b6472;
+      --line:#d9e1ec;
+      --brand:#123b6d;
+      --brand-2:#1d5aa6;
+      --soft:#eef4fb;
+      --good:#0f766e;
+      --warn:#9a6700;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:var(--bg);
+      color:var(--ink);
+      line-height:1.55;
+    }
+    .wrap{
+      max-width:1200px;
+      margin:0 auto;
+      padding:32px 20px 60px;
+    }
+    .hero{
+      background:linear-gradient(135deg, var(--brand), var(--brand-2));
+      color:#fff;
+      border-radius:20px;
+      padding:36px 32px;
+      box-shadow:0 12px 30px rgba(18,59,109,0.15);
+      margin-bottom:24px;
+    }
+    .hero h1{
+      margin:0 0 10px;
+      font-size:36px;
+      line-height:1.1;
+    }
+    .hero p{
+      margin:8px 0 0;
+      max-width:900px;
+      color:rgba(255,255,255,0.92);
+      font-size:17px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(12,1fr);
+      gap:20px;
+      margin-top:20px;
+    }
+    .card{
+      grid-column:span 12;
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:24px;
+      box-shadow:0 8px 24px rgba(16,24,40,0.05);
+    }
+    .card h2{
+      margin:0 0 14px;
+      color:var(--brand);
+      font-size:24px;
+    }
+    .card h3{
+      margin:18px 0 10px;
+      color:var(--brand-2);
+      font-size:18px;
+    }
+    .lead{
+      color:var(--muted);
+      margin-top:0;
+    }
+    .cols-2{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:18px;
+    }
+    .panel{
+      background:var(--soft);
+      border:1px solid #dce8f8;
+      border-radius:14px;
+      padding:16px 18px;
+    }
+    .panel.good h3{color:var(--good)}
+    .panel.warn h3{color:var(--warn)}
+    ul{
+      margin:8px 0 0 20px;
+      padding:0;
+    }
+    li{margin:8px 0}
+    .tag{
+      display:inline-block;
+      background:#edf2ff;
+      color:var(--brand);
+      border:1px solid #dbe6fb;
+      border-radius:999px;
+      padding:6px 10px;
+      font-size:12px;
+      font-weight:700;
+      letter-spacing:.2px;
+      margin-bottom:10px;
+    }
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:12px;
+      overflow:hidden;
+      border-radius:14px;
+      border:1px solid var(--line);
+    }
+    th, td{
+      padding:14px 12px;
+      text-align:left;
+      border-bottom:1px solid var(--line);
+      vertical-align:top;
+    }
+    th{
+      background:#f1f5fb;
+      color:var(--brand);
+      font-size:14px;
+    }
+    tr:last-child td{border-bottom:none}
+    .category{
+      font-weight:700;
+      color:var(--brand);
+      min-width:180px;
+    }
+    a.link{
+      color:var(--brand-2);
+      text-decoration:none;
+      font-weight:700;
+    }
+    a.link:hover{text-decoration:underline}
+    .muted{
+      color:var(--muted);
+      font-size:14px;
+    }
+    .footer{
+      margin-top:26px;
+      color:var(--muted);
+      font-size:13px;
+      text-align:center;
+    }
+    .note{
+      background:#fff7e6;
+      border:1px solid #f1d7a8;
+      border-radius:14px;
+      padding:14px 16px;
+      color:#7a5300;
+      margin-top:14px;
+    }
+    @media (max-width: 900px){
+      .cols-2{grid-template-columns:1fr}
+      .hero h1{font-size:30px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="tag">FundsIndia | PMS Product Suite</div>
+      <h1>Portfolio Management Services (PMS)</h1>
+      <p>
+        PMS is a professionally managed investment solution where a dedicated portfolio is run for the client,
+        typically with higher customization, concentrated exposure, and active decision-making than traditional
+        mutual funds. This page can be hosted as-is on GitHub Pages and updated anytime by replacing fund links or descriptions.
+      </p>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>How PMS Works</h2>
+        <p class="lead">
+          In PMS, the client’s money is managed under a defined investment strategy by a professional fund manager or
+          investment team. Unlike a mutual fund pool, the client usually gets a portfolio mapped to their own PMS account,
+          giving greater portfolio visibility and a more direct strategy experience.
+        </p>
+
+        <div class="cols-2">
+          <div class="panel">
+            <h3>Typical PMS Journey</h3>
+            <ul>
+              <li>Client is onboarded after suitability and risk assessment.</li>
+              <li>The chosen strategy is selected based on return expectation, risk appetite, and holding period.</li>
+              <li>The PMS manager constructs and manages the portfolio actively.</li>
+              <li>Investments may be concentrated, theme-driven, value-oriented, growth-led, or income-focused.</li>
+              <li>Reporting is usually more transparent at the portfolio level than in traditional pooled products.</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>How PMS Differs from Mutual Funds</h3>
+            <ul>
+              <li>Higher degree of customization and active intervention.</li>
+              <li>Can run more concentrated, differentiated, and high-conviction portfolios.</li>
+              <li>Suitable for clients seeking alpha, strategy depth, or a sharper mandate.</li>
+              <li>Typically better suited for clients comfortable with market cycles and medium-to-long holding periods.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Benefits and Considerations</h2>
+        <div class="cols-2">
+          <div class="panel good">
+            <h3>Benefits</h3>
+            <ul>
+              <li>Access to professional portfolio construction and active management.</li>
+              <li>Potential for differentiated alpha versus plain-vanilla diversified products.</li>
+              <li>Useful for sophisticated investors who want more than a standard mutual fund allocation.</li>
+              <li>Can complement an existing core portfolio with focused growth, value, contra, or income ideas.</li>
+              <li>Greater clarity on the strategy mandate and portfolio style.</li>
+            </ul>
+          </div>
+          <div class="panel warn">
+            <h3>Cons / Risks</h3>
+            <ul>
+              <li>Higher risk than broad diversified allocation if the strategy is concentrated.</li>
+              <li>Performance may be cyclical and can underperform for stretches.</li>
+              <li>Requires client maturity, patience, and ability to absorb interim volatility.</li>
+              <li>Not ideal for very short-term money or for clients needing guaranteed outcomes.</li>
+              <li>Fees, taxation, drawdowns, and liquidity expectations should be explained upfront.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Whom to Pitch PMS To</h2>
+        <p class="lead">PMS should be positioned selectively, not universally.</p>
+        <div class="cols-2">
+          <div class="panel">
+            <h3>Best Fit Client Profiles</h3>
+            <ul>
+              <li>Clients who already have a base mutual fund portfolio and want an alpha-seeking satellite allocation.</li>
+              <li>Investors comfortable with a 3–5+ year horizon.</li>
+              <li>Clients who understand market volatility and do not panic with temporary drawdowns.</li>
+              <li>HNI / affluent investors seeking strategy-led allocation rather than generic diversification.</li>
+              <li>Clients looking for differentiated exposure such as contra, compounders, small &amp; mid-cap, or income enhancement.</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>Avoid / Use Caution</h3>
+            <ul>
+              <li>First-time equity investors without market experience.</li>
+              <li>Clients with short-term liquidity needs.</li>
+              <li>Clients seeking capital protection or assured return language.</li>
+              <li>Highly anxious investors who track prices daily and react emotionally.</li>
+              <li>Clients without clear suitability alignment.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="note">
+          <strong>Practical pitch:</strong> Position PMS as a <strong>satellite allocation</strong> for suitable clients who already have a stable core portfolio and want a professionally managed, higher-conviction strategy for long-term wealth creation or differentiated income generation.
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Equity PMS Product Suite</h2>
+        <p class="lead">Grouped by strategy style to make advisor positioning simpler.</p>
+
+        <h3>Flexicap / Diversified / Core Equity Strategies</h3>
+        <table>
+          <thead>
+            <tr>
+              <th style="width:24%;">Sub Category</th>
+              <th style="width:36%;">Fund / Strategy</th>
+              <th>Description / Pitch Use</th>
+              <th style="width:16%;">Fund Page</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="category">Flexicap / Diversified</td>
+              <td>Buoyant Opportunities</td>
+              <td>Can be positioned as a diversified core PMS strategy for long-term wealth creation.</td>
+              <td><a class="link" href="https://www.buoyantcap.com/products/" target="_blank">Link</a></td>
+            </tr>
+            <tr>
+              <td class="category">Contra / Value</td>
+              <td>ICICI Pru Contra Fund</td>
+              <td>Suitable for clients who understand valuation-led investing and want contrarian opportunities.</td>
+              <td><a class="link" href="https://www.iciciprualternates.com/portfolio-management-service/contrarian-investing" target="_blank">Link</a></td>
+            </tr>
+            <tr>
+              <td class="category">Core Equity</td>
+              <td>AAA IOP</td>
+              <td>Can be pitched as a differentiated equity PMS allocation within a broader portfolio.</td>
+              <td><a class="link" href="https://www.alfaccurate.com/aaa-iop-pms" target="_blank">Link</a></td>
+            </tr>
+            <tr>
+              <td class="category">Compounder Strategy</td>
+              <td>Carnelian Capital Compounder</td>
+              <td>Suitable for clients preferring quality businesses and compounding-led wealth creation.</td>
+              <td><a class="link" href="https://carneliancapital.co.in/service/carnelian-capital-compounder-strategy" target="_blank">Link</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Small &amp; Mid Cap / Higher Growth Strategies</h3>
+        <table>
+          <thead>
+            <tr>
+              <th style="width:24%;">Sub Category</th>
+              <th style="width:36%;">Fund / Strategy</th>
+              <th>Description / Pitch Use</th>
+              <th style="width:16%;">Fund Page</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:#fff8cc;">
+  <td class="category">Small &amp; Mid Cap</td>
+  <td><span style="font-weight:700; color:#123b6d;">ICICI PIPE</span></td>
+  <td>For clients with stronger risk appetite seeking higher growth potential over a long horizon.</td>
+  <td><a class="link" href="YOUR-LINK" target="_blank">Link</a></td>
+</tr>
+            </tr>
+            <tr>
+              <td class="category">Small &amp; Mid Cap</td>
+              <td>Carnelian Shift</td>
+              <td>Can be pitched to sophisticated investors willing to accept sharper volatility for alpha potential.</td>
+              <td><a class="link" href="https://carneliancapital.co.in/service/carnelian-shift-strategy" target="_blank"> Link</a></td>
+            </tr>
+            <tr>
+              <td class="category">Emerging Opportunities</td>
+              <td>Abakkus Emerging Opportunities</td>
+              <td>Fits clients looking for emerging business opportunities and market rerating themes.</td>
+              <td><a class="link" href="https://abakkusinvest.com/en/our-products/abakkus-emerging-opportunities-approach" target="_blank">Link</a></td>
+            </tr>
+            <tr style="background:#eef4ff;">
+  <td class="category">Growth / Alpha</td>
+  <td><span style="font-weight:700; color:#123b6d;">Unifi APJ</span></td>
+  <td>Can be positioned as a satellite alpha strategy for growth-oriented portfolios.</td>
+  <td><a class="link" href="YOUR-LINK" target="_blank">Link</a></td>
+</tr>
+            <tr>
+              <td class="category">Long-Term Venture</td>
+              <td>Alchemy Long Term Venture</td>
+              <td>Suitable for investors seeking long-duration participation in high-growth businesses.</td>
+              <td><a class="link" href="https://www.alchemycapital.com/portfolio-management-services/alchemy-select-stock.aspx" target="_blank">Link</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+      <div class="card">
+        <h2>Debt PMS Product Suite</h2>
+        <p class="lead">For clients seeking income orientation, accrual strategies, or yield enhancement beyond plain vanilla fixed income.</p>
+        <table>
+          <thead>
+            <tr>
+              <th style="width:24%;">Sub Category</th>
+              <th style="width:36%;">Fund / Strategy</th>
+              <th>Description / Pitch Use</th>
+              <th style="width:16%;">Fund Page</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:#eaf7ea;">
+  <td class="category">Conservative Income</td>
+  <td><span style="font-weight:700; color:#166534;">Sundaram First PMS</span></td>
+  <td>Suitable for clients looking for an actively managed debt-oriented alternative for income and stability.</td>
+  <td><a class="link" href="YOUR-LINK" target="_blank">Link</a></td>
+</tr>
+            <tr>
+              <td class="category">Conservative Credit</td>
+              <td>Philip Capital Conservative Credit</td>
+              <td>Useful for clients seeking accrual-oriented debt exposure with a more strategy-led approach.</td>
+              <td><a class="link" href="https://m.phillipcapital.in/service/portfolio-management-services-pms" target="_blank">Link</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+     
